@@ -11,17 +11,17 @@ mkdir $new_dir 2>/dev/null
 
 for i in $@ 
 do
+	IFS=$'\n'
 	files=$(find ~/ -type f -name "*.$i" 2>/dev/null)
 	for j in $files
 	do       
-		IFS=$'/\n \0'
+		IFS=$'/'
 		l=""
 		for h in $j 
 		do
 			l=$h
 		done
-		IFS=$'\n \0'
-		
+	
 		plus=$""
 		lpl="$l$plus"
 		while [ -f $new_dir/$lpl ]
