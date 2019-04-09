@@ -20,7 +20,8 @@ mkdir tmp
 cd tmp
 
 cmake -DON_PI=false -H.. -B.
-make
+make 
+sudo make install
 
 cd ../bin
 
