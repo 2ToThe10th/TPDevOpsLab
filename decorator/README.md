@@ -20,10 +20,10 @@ Usage:
 
 В папке ready находятся уже готовые bin и lib
 
-# Telegram Bot Chanel:
+#### Telegram Bot Chanel:
 https://t.me/joinchat/AAAAAEiHskoa6qaPFiKRbA 
 
-# Gmail
+#### Gmail
 Name:bot.sasha.grib@gmail.com
 
 Password:qwertyoiuhjk
