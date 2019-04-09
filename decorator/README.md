@@ -19,3 +19,8 @@ Usage:
 
 
 В папке ready находятся уже готовые bin и lib
+
+Telegram Bot Chanel:https://t.me/joinchat/AAAAAEiHskoa6qaPFiKRbA 
+Gmail
+Name:bot.sasha.grib@gmail.com
+Password:qwertyoiuhjk
