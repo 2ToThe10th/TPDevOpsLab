@@ -1,6 +1,6 @@
 # Mail Task
 
-After start docker you need to create 2 files for iRedMail: /etc/hosts and /etc/hostname
+Before start docker you need to create 2 files for iRedMail: /etc/hosts and /etc/hostname
 
 Then you can build and start docker by command:
 
