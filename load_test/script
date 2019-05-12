@@ -1,0 +1,146 @@
+import { group, sleep } from 'k6';
+import http from 'k6/http';
+
+export let options = {
+		insecureSkipTLSVerify: true,
+    stages: [
+        {
+            "duration": "1m0s",
+            "target": 10
+        },
+        {
+            "duration": "8m0s",
+            "target": 10
+        },
+        {
+            "duration": "1m0s",
+            "target": 0
+        }
+    ],
+    maxRedirects: 0,
+    discardResponseBodies: true,
+};
+
+export default function() {
+
+	group("page_0 - http://217.73.88.161:8443/", function() {
+		let req, res;
+		req = [];
+		res = http.batch(req);
+		sleep(0.50);
+	});
+	group("page_1 - https://217.73.88.161:8443/", function() {
+		let req, res;
+		req = [{
+			"method": "get",
+			"url": "https://217.73.88.161:8443/",
+			"params": {
+				"headers": {
+					"Upgrade-Insecure-Requests": "1",
+					"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/73.0.3683.86 Chrome/73.0.3683.86 Safari/537.36",
+					"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
+				}
+			}
+		}];
+		res = http.batch(req);
+		sleep(22.26);
+	});
+	group("page_2 - https://217.73.88.161:8443/login", function() {
+		let req, res;
+		req = [{
+			"method": "post",
+			"url": "https://217.73.88.161:8443/login",
+			"body": {
+				"login": "Sasha",
+				"password": "passwd"
+			},
+			"params": {
+				"headers": {
+					"Origin": "https://217.73.88.161:8443",
+					"Upgrade-Insecure-Requests": "1",
+					"Content-Type": "application/x-www-form-urlencoded",
+					"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/73.0.3683.86 Chrome/73.0.3683.86 Safari/537.36",
+					"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
+				}
+			}
+		}];
+		res = http.batch(req);
+		sleep(2.46);
+	});
+	group("page_3 - https://217.73.88.161:8443/create_alarm_clock", function() {
+		let req, res;
+		req = [{
+			"method": "get",
+			"url": "https://217.73.88.161:8443/create_alarm_clock",
+			"params": {
+				"headers": {
+					"Upgrade-Insecure-Requests": "1",
+					"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/73.0.3683.86 Chrome/73.0.3683.86 Safari/537.36",
+					"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
+				}
+			}
+		}];
+		res = http.batch(req);
+		sleep(18.36);
+	});
+	group("page_4 - https://217.73.88.161:8443/create_alarm_clock", function() {
+		let req, res;
+		req = [{
+			"method": "post",
+			"url": "https://217.73.88.161:8443/create_alarm_clock",
+			"body": {
+				"day": "12",
+				"hour": "18",
+				"minute": "00",
+				"month": "5",
+				"text": "Test Alarm Clock",
+				"year": "2019"
+			},
+			"params": {
+				"headers": {
+					"Origin": "https://217.73.88.161:8443",
+					"Upgrade-Insecure-Requests": "1",
+					"Content-Type": "application/x-www-form-urlencoded",
+					"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/73.0.3683.86 Chrome/73.0.3683.86 Safari/537.36",
+					"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
+				}
+			}
+		}];
+		res = http.batch(req);
+		sleep(2.87);
+	});
+	group("page_5 - https://217.73.88.161:8443/remove_alarm_clock/52", function() {
+		let req, res;
+		req = [{
+			"method": "get",
+			"url": "https://217.73.88.161:8443/remove_alarm_clock/52",
+			"params": {
+				"headers": {
+					"Upgrade-Insecure-Requests": "1",
+					"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/73.0.3683.86 Chrome/73.0.3683.86 Safari/537.36",
+					"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
+				}
+			}
+		}];
+		res = http.batch(req);
+		sleep(6.20);
+	});
+	group("page_6 - https://217.73.88.161:8443/logout", function() {
+		let req, res;
+		req = [{
+			"method": "get",
+			"url": "https://217.73.88.161:8443/logout",
+			"params": {
+				"headers": {
+					"Upgrade-Insecure-Requests": "1",
+					"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/73.0.3683.86 Chrome/73.0.3683.86 Safari/537.36",
+					"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
+				}
+			}
+		}];
+		res = http.batch(req);
+		// Random sleep between 5s and 10s
+		sleep(Math.floor(Math.random()*5+5));
+	});
+
+}
