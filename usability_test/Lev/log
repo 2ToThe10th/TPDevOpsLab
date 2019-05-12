@@ -1,0 +1,19 @@
+[12/May/2019 22:16:31] "GET / HTTP/1.1" 302 -
+[12/May/2019 22:16:31] "GET /login HTTP/1.1" 200 -
+[12/May/2019 22:16:32] "GET /favicon.ico HTTP/1.1" 404 -
+[12/May/2019 22:16:44] "POST /login HTTP/1.1" 302 -
+[12/May/2019 22:16:44] "GET /index HTTP/1.1" 200 -
+[12/May/2019 22:16:47] "GET /create_alarm_clock HTTP/1.1" 200 -
+[12/May/2019 22:16:58] "POST /create_alarm_clock HTTP/1.1" 302 -
+[12/May/2019 22:16:58] "GET /index HTTP/1.1" 200 -
+[12/May/2019 22:17:09] "GET /change_password HTTP/1.1" 200 -
+[12/May/2019 22:17:17] "GET /change_password HTTP/1.1" 200 -
+[12/May/2019 22:17:25] "POST /change_password HTTP/1.1" 302 -
+[12/May/2019 22:17:26] "GET /index HTTP/1.1" 200 -
+[12/May/2019 22:17:28] "GET /change_password HTTP/1.1" 200 -
+[12/May/2019 22:17:37] "POST /change_password HTTP/1.1" 200 -
+[12/May/2019 22:17:55] "POST /change_password HTTP/1.1" 200 -
+[12/May/2019 22:18:06] "POST /change_password HTTP/1.1" 200 -
+[12/May/2019 22:18:21] "GET /create_alarm_clock HTTP/1.1" 200 -
+[12/May/2019 22:22:35] "GET /create_alarm_clock HTTP/1.1" 200 -
+

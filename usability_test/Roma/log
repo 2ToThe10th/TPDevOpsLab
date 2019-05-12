@@ -1,0 +1,11 @@
+[12/May/2019 19:16:44] "GET / HTTP/1.1" 302 -
+[12/May/2019 19:16:44] "GET /login HTTP/1.1" 200 -
+[12/May/2019 19:16:44] "GET /favicon.ico HTTP/1.1" 404 -
+[12/May/2019 19:17:10] "POST /login HTTP/1.1" 302 -
+[12/May/2019 19:17:10] "GET /index HTTP/1.1" 302 -
+[12/May/2019 19:17:10] "GET /change_password HTTP/1.1" 200 -
+[12/May/2019 19:17:21] "POST /change_password HTTP/1.1" 302 -
+[12/May/2019 19:17:21] "GET /index HTTP/1.1" 200 -
+[12/May/2019 19:17:29] "GET /create_alarm_clock HTTP/1.1" 200 -
+[12/May/2019 19:17:51] "POST /create_alarm_clock HTTP/1.1" 302 -
+
