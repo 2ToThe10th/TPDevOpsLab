@@ -1,8 +1,11 @@
-# TPDevOpsLab
-|Task|Branch|
+# TP DevOpsLab
+
+Задачи по технологиям программирования за 2 семестр
+
+|Ветка|Описание задания|
 |---|---|
-|1|script|
-|2|cmake|
-|3|assembly|
-|5|tests|
-|6|mail_service|
+|script|Простой bash скрипт|
+|cmake|Cmake скрипты|
+|assembly|Сборка приложений под разные архитектуры|
+|tests|Тесты для сайта|
+|mail_service|Скрипт для поднятия почты в докере|
